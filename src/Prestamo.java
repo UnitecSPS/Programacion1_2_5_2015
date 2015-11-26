@@ -13,4 +13,20 @@ public class Prestamo {
     //acceso tipo id
     public int codigo, cuotas;
     public String cliente;
+    
+    //constructores
+    
+    /*public Prestamo(){
+        cuotas = 0;
+        codigo = -1;
+        cliente = "sin nombre";
+        System.out.println("Construyendo un Prestamo");
+    }*/
+    
+    public Prestamo(int co, String n){
+        codigo = co;
+        cliente = n;
+    }
+    
+    //funciones
 }
