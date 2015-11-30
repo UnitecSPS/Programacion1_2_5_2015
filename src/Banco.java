@@ -18,8 +18,10 @@ public class Banco {
         int c = 5;
         Prestamo pre = new Prestamo(c, lea.next());
         Prestamo pre2 = new Prestamo(10,"Celeste");
+        Prestamo pre3 = new Prestamo();
         
         System.out.println(pre.codigo+"-"+pre.cliente);
         System.out.println(pre2.codigo+"-"+pre2.cliente);
+        System.out.println(pre3.codigo+"-"+pre3.cliente);
     }
 }

@@ -16,17 +16,21 @@ public class Prestamo {
     
     //constructores
     
-    /*public Prestamo(){
-        cuotas = 0;
-        codigo = -1;
-        cliente = "sin nombre";
-        System.out.println("Construyendo un Prestamo");
-    }*/
-    
-    public Prestamo(int co, String n){
-        codigo = co;
-        cliente = n;
+    public Prestamo(){
+        this(-1,"sin nombre");
+        System.out.println("Llame el ()");
     }
     
+    public Prestamo(int co, String n){
+        this(co,0,n);
+    }
+    
+    public Prestamo(int codigo, int cuotas, String cliente) {
+        this.codigo = codigo;
+        this.cuotas = cuotas;
+        this.cliente = cliente;
+        System.out.println("Llame el centralizado");
+    }
+
     //funciones
 }
