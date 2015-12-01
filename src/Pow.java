@@ -19,5 +19,20 @@ public class Pow {
         Con estos valores inicializan la potencia.
     LUEGO hacer un main aparte para probarlo.
     */
-
+    public int base, expo, potencia;
+    
+    public Pow(int base, int e){
+        this.base = base;
+        expo = e;
+        
+        potencia=1;
+        for(int c=0; c < expo; c++)
+            potencia *= base;
+    }
+    
+    public static void main(String[] args) {
+        Pow pow = new Pow(4,3);
+        System.out.println(pow.base+"^"+pow.expo+
+                " = "+pow.potencia);
+    }
 }

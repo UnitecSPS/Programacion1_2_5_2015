@@ -17,11 +17,14 @@ public class Banco {
         //creamos un objeto prestamo y lo INSTANCIAMOS
         int c = 5;
         Prestamo pre = new Prestamo(c, lea.next());
-        Prestamo pre2 = new Prestamo(10,"Celeste");
+        Prestamo pre2 = new Prestamo(7,"Celeste");
         Prestamo pre3 = new Prestamo();
         
-        System.out.println(pre.codigo+"-"+pre.cliente);
-        System.out.println(pre2.codigo+"-"+pre2.cliente);
-        System.out.println(pre3.codigo+"-"+pre3.cliente);
+        pre3.setCodigo(10);
+        pre3.setCliente("Panchito");
+        
+        pre.print();
+        pre2.print();
+        pre3.print();
     }
 }

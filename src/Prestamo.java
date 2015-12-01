@@ -11,8 +11,8 @@
 public class Prestamo {
     //atributos
     //acceso tipo id
-    public int codigo, cuotas;
-    public String cliente;
+    private int codigo, cuotas;
+    private String cliente;
     
     //constructores
     
@@ -33,4 +33,16 @@ public class Prestamo {
     }
 
     //funciones
+    
+    public void setCodigo(int cod){
+        codigo = cod;
+    }
+    
+    public void setCliente(String name){
+        cliente = name;
+    }
+    
+    public void print(){
+        System.out.println(codigo+"-"+cliente);
+    }
 }
