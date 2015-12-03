@@ -15,16 +15,22 @@ public class Banco {
     public static void main(String[] args) {
         Scanner lea = new Scanner(System.in);
         //creamos un objeto prestamo y lo INSTANCIAMOS
-        int c = 5;
+        int c = 15;
         Prestamo pre = new Prestamo(c, lea.next());
         Prestamo pre2 = new Prestamo(7,"Celeste");
         Prestamo pre3 = new Prestamo();
         
-        pre3.setCodigo(10);
+        //pre3.setCodigo(10);
         pre3.setCliente("Panchito");
         
         pre.print();
         pre2.print();
         pre3.print();
+        
+        if(pre.getCodigo() > 10 ){
+            System.out.println("Si es de los mayores a 10");
+        }
+        
+        System.out.println(pre3.getCodigo());
     }
 }
