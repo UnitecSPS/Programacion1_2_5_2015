@@ -15,8 +15,16 @@ public class TestEmpresa {
     public static void main(String[] args) {
         Empresa pepsi = new Empresa("Pepsi co.",200);
         
-        pepsi.empleados[0] = new EmpleadoPorHora(1, "Mae");
-        pepsi.empleados[0].setHoras(50);
-        System.out.println(pepsi.empleados[0].pagar());
+        if( pepsi.addEmployee2(1, "Mae") )
+            System.out.println("Se agrego bien!");
+        
+        /*
+        TODO: Hace un menu con las opciones
+            1- Agregar EMpleado
+            2- Listar los empleados
+            3- Pagar a un empleado
+            4- Asignar las horas a un empleado
+        */
+      
     }
 }

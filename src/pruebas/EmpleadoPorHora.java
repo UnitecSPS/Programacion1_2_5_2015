@@ -21,12 +21,24 @@ public class EmpleadoPorHora {
      }
      
      public void setHoras(double h){
-         horas = h;
+         horas=h;
      }
-     
-     public double pagar(){
-         if(horas > 40)
-             return (40*100)+((horas-40)*200);
-         return horas*100;
-     }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getHoras() {
+        return horas;
+    }
+
+    public double pagar(){
+        if(horas > 40)
+            return (40*100)+((horas-40)*200);
+        return horas*100;
+    }
 }
