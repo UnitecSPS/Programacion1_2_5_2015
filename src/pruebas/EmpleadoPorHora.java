@@ -41,4 +41,8 @@ public class EmpleadoPorHora {
             return (40*100)+((horas-40)*200);
         return horas*100;
     }
+    
+    public void print(){
+        System.out.println(codigo+"-"+nombre);
+    }
 }

@@ -67,7 +67,10 @@ public class Empresa {
     OJO CON LAS posiciones NULAS
     */
     public void list(){
-      
+        for(EmpleadoPorHora eph : empleados){
+            if(eph != null)
+                eph.print();
+        }
     }
     
     /*
@@ -76,7 +79,10 @@ public class Empresa {
     existe retorno -1;
     */
     public double pagar(int cod){
-        return 0;
+        EmpleadoPorHora eph = search(cod);
+        if(eph != null)
+            return eph.pagar();
+        return -1;
     }
     
     /*

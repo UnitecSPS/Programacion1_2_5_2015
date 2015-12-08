@@ -25,6 +25,7 @@ public class TestEmpresa {
             3- Pagar a un empleado
             4- Asignar las horas a un empleado
         */
-      
+        pepsi.list();
+        pepsi.setHorasToEmployee(1, 88);
     }
 }
